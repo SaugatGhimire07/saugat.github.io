@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap');
 *
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;    
+    background-color: #000000;
 }
 
 body
@@ -12,150 +14,56 @@ body
     font-family: 'Karla', sans-serif;
 }
 
-/*nav bar*/
-header
+.short-info
 {
-	display: flex;
-	width: 75%;
-	height: 10vh;
-	margin: auto;
-	align-items: center;
-    padding-top: 3.777777777777778rem;
-    padding-bottom: 6.777777777777778rem;
-    z-index: 1000;
-    background: #fff;
+    padding-top: 4rem;
 }
 
-nav
+.short-info
 {
-    display: flex;
+    font-family: 'syne';
+    font-weight: 800;
+    font-size: 16px;
+    color: #b2b2b2;
 }
 
-.menu-btn {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 40px;
-    cursor: pointer;
-    transition: all .5s ease-in-out;
-    z-index: 1;
-    /* border: 3px solid green; */
-  }
-.menu-btn__burger 
+.short-traits
 {
-    cursor: pointer;
-    width: 1.65rem;
-    height: 2px;
-    background: #4c4c4c;
-    transition: all .1s ease-in-out;
-}
-
-.menu-btn__burger::before,
-.menu-btn__burger::after 
-{
-    content: '';
-    position: absolute;
-    cursor: pointer;
-    width: 1.65rem;
-    height: 2px;
-    background: #4c4c4c;
-    transition: all .2s ease-in-out;
-}
-
-.menu-btn__burger::before 
-{
-    transform: translateY(-6px);
-}
-.menu-btn__burger::after 
-{
-    transform: translateY(6px);
-}
-
-.menu-btn:hover .menu-btn__burger::before 
-{
-    transform: translateY(-8px);
-}
-
-.menu-btn:hover .menu-btn__burger::after 
-{
-    transform: translateY(8px);
-}
-
-/* ANIMATION */
-.menu-btn.open .menu-btn__burger
-{
-    background: transparent;
-    box-shadow: none;
-}
-
-.menu-btn.open .menu-btn__burger::before 
-{
-    transform: rotate(45deg);
-}
-.menu-btn.open .menu-btn__burger::after 
-{
-    transform: rotate(-45deg);
-}
-
-.logo-container
-{
-	display: flex;
-    z-index: 2;
-}
-
-.logo-container
-{
-	flex: 1;
-}
-
-.nav-brand
-{
-    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    cursor: pointer;
-    letter-spacing: 2px;
+    font-size: 59px;
+    color: white;
+    line-height: 78px;
 }
 
-.nav-brand a
+.container
 {
-    color: #545454;
-    text-decoration: none;
-}
-
-.nav-links 
-{
-    display: flex;
-    list-style: none;
-    height: 100%;
-    justify-content: space-around;
-    align-items: center;
+    width: 800px;
     margin-left: auto;
+    margin-right: auto;
 }
 
-.nav-links li a 
+.about-me, .about-me-1, .about-me-2
 {
-    color: #d1d1d1;
-    text-decoration: none;
-    font-size: 17px;
-    font-weight: 700;
-    transition: 0.8s;
+    
+    justify-content: center;
+    color: #b2b2b2;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 33px;
 }
 
-.nav-links li.active a
+.about-me
 {
-    color: #545454;
+    margin-top: 50px;
 }
 
-.nav-links li a:hover
+.about-me-1, .about-me-2
 {
-    color: #545454;
-    transition: 0.8s;
+    padding-top: 10px;
 }
 
-.nav-link
+.about-me-2
 {
-    padding: .5rem 1.5rem;
+    padding-bottom: 80px;
 }
-/*nav bar ends*/
